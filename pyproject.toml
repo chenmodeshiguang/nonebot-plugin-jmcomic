@@ -1,0 +1,34 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "nonebot-plugin-jmcomic"
+version = "0.1.0"
+description = "基于 JMComic-Crawler-Python 的 NoneBot2 禁漫天堂插件，支持车号直出全本 PDF、站内搜索、章节合并预览与热门榜单"
+authors = ["YourName <your_email@example.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/YourUsername/nonebot-plugin-jmcomic"
+repository = "https://github.com/YourUsername/nonebot-plugin-jmcomic"
+keywords = ["nonebot", "nonebot2", "onebot", "onebot11", "jmcomic", "comic"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+nonebot2 = ">=2.2.0"
+nonebot-adapter-onebot = ">=2.4.0"
+jmcomic = ">=2.7.0"
+img2pdf = ">=0.5.0"
+pillow = ">=10.0.0"
+
+[tool.nonebot]
+plugins = ["nonebot_plugin_jmcomic"]
