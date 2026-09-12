@@ -32,8 +32,8 @@ from .utils import (
 )
 
 __plugin_meta__ = PluginMetadata(
-    name="JMComic 禁漫助手",
-    description="基于 JMComic-Crawler-Python 的禁漫天堂助手，支持车号直发全本 PDF 与站内搜索",
+    name="JMComic PDF 漫画助手",
+    description="基于 JMComic-Crawler-Python 的禁漫天堂助手，支持车号直出全本高清 PDF 与站内搜索",
     usage=(
         "📖 JMComic 指令说明：\n"
         "━━━━━━━━━━━━━━━━━━\n"

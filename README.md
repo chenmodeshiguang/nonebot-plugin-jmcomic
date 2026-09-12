@@ -6,16 +6,16 @@
 
 <div align="center">
 
-# nonebot-plugin-jmcomic
+# nonebot-plugin-jmcomic-pdf
 
-_✨ 基于 [JMComic-Crawler-Python](https://github.com/hect0x7/JMComic-Crawler-Python) 的 NoneBot2 禁漫天堂插件 ✨_
+_✨ 基于 [JMComic-Crawler-Python](https://github.com/hect0x7/JMComic-Crawler-Python) 的 NoneBot2 禁漫天堂插件，支持车号直发全本高清 PDF ✨_
 
 <p align="center">
-  <a href="https://raw.githubusercontent.com/YourUsername/nonebot-plugin-jmcomic/master/LICENSE">
-    <img src="https://img.shields.io/github/license/YourUsername/nonebot-plugin-jmcomic.svg" alt="license">
+  <a href="https://raw.githubusercontent.com/chenmodeshiguang/nonebot-plugin-jmcomic/master/LICENSE">
+    <img src="https://img.shields.io/github/license/chenmodeshiguang/nonebot-plugin-jmcomic.svg" alt="license">
   </a>
-  <a href="https://pypi.python.org/pypi/nonebot-plugin-jmcomic">
-    <img src="https://img.shields.io/pypi/v/nonebot-plugin-jmcomic.svg" alt="pypi">
+  <a href="https://pypi.python.org/pypi/nonebot-plugin-jmcomic-pdf">
+    <img src="https://img.shields.io/pypi/v/nonebot-plugin-jmcomic-pdf.svg" alt="pypi">
   </a>
   <img src="https://img.shields.io/badge/python-3.10+-blue.svg" alt="python">
   <a href="https://nonebot.dev/">
@@ -32,7 +32,7 @@ _✨ 基于 [JMComic-Crawler-Python](https://github.com/hect0x7/JMComic-Crawler-
 
 ## 📖 介绍
 
-`nonebot-plugin-jmcomic` 是一款专为 **NoneBot2 (OneBot V11 适配器)** 打造的禁漫天堂助手插件。
+`nonebot-plugin-jmcomic-pdf` 是一款专为 **NoneBot2 (OneBot V11 适配器)** 打造的禁漫天堂助手插件。
 
 底层接入并适配了社区优秀的爬虫框架 [JMComic-Crawler-Python](https://github.com/hect0x7/JMComic-Crawler-Python)，具备**智能图片切片反混淆还原**、**动态 API 域名更新**与**高并发无损合成 PDF** 等强大特性。
 
@@ -52,24 +52,24 @@ _✨ 基于 [JMComic-Crawler-Python](https://github.com/hect0x7/JMComic-Crawler-
 ### 方式一：使用 nb-cli 安装（推荐）
 在 NoneBot2 项目根目录下执行：
 ```bash
-nb plugin install nonebot-plugin-jmcomic
+nb plugin install nonebot-plugin-jmcomic-pdf
 ```
 
 ### 方式二：使用包管理器安装
 ```bash
 # 使用 pip
-pip install nonebot-plugin-jmcomic
+pip install nonebot-plugin-jmcomic-pdf
 
 # 若网络较慢可使用清华镜像
-pip install nonebot-plugin-jmcomic -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install nonebot-plugin-jmcomic-pdf -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 随后在 NoneBot2 项目的 `pyproject.toml` 的 `plugins` 列表中加入：
 ```toml
-plugins = ["nonebot_plugin_jmcomic"]
+plugins = ["nonebot_plugin_jmcomic_pdf"]
 ```
 
 ### 方式三：源码直接引入
-克隆或下载本项目至机器人工程的自定义插件目录（例如 `plugins/nonebot_plugin_jmcomic`），并在对应配置中加载即可。
+克隆或下载本项目至机器人工程的自定义插件目录（例如 `plugins/nonebot_plugin_jmcomic_pdf`），并在对应配置中加载即可。
 
 ---
 
