@@ -33,7 +33,7 @@ from .utils import (
 
 __plugin_meta__ = PluginMetadata(
     name="JMComic 禁漫助手",
-    description="基于 JMComic-Crawler-Python 的禁漫天堂 OneBot QQ 机器人插件，支持车号查询、站内搜索、章节预览、整本打包下载与热门榜单",
+    description="基于 JMComic-Crawler-Python 的禁漫天堂助手，支持车号直发全本 PDF 与站内搜索",
     usage=(
         "📖 JMComic 指令说明：\n"
         "━━━━━━━━━━━━━━━━━━\n"
@@ -46,8 +46,9 @@ __plugin_meta__ = PluginMetadata(
         "• jmhelp：查看本帮助信息"
     ),
     type="application",
+    homepage="https://github.com/chenmodeshiguang/nonebot-plugin-jmcomic",
+    supported_adapters={"~onebot.v11"},
     config=Config,
-    homepage="https://github.com/hect0x7/JMComic-Crawler-Python",
 )
 
 def _get_config() -> Config:
